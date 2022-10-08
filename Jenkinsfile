@@ -12,7 +12,7 @@ pipeline {
 
     stage('BuildApp') {
       steps {
-        sh 'sudo ./scripts/build.sh'
+        sh 'script scripts/build.sh'
       }
     }
 
