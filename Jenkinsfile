@@ -19,7 +19,7 @@ pipeline {
     stage('Test') {
       steps {
         script {
-          scripts/test.sh
+          scripts scripts/test.sh
         }
 
       }
