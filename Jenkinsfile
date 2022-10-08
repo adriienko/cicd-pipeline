@@ -24,7 +24,7 @@ pipeline {
 
     stage('BuildImage') {
       steps {
-        sh 'docker.build("${registry}:${env.BUILD_ID}")'
+        sh 'def customImage = docker.build("${registry}:${env.BUILD_ID}")'
       }
     }
 
