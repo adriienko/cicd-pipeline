@@ -12,8 +12,7 @@ pipeline {
 
     stage('BuildApp') {
       steps {
-        sh '''sudo chown -R jenkins /usr/local
-./scripts/build.sh'''
+        sh 'sudo ./scripts/build.sh'
       }
     }
 
