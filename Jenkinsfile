@@ -24,10 +24,7 @@ pipeline {
 
     stage('BuildImage') {
       steps {
-        script {
-          docker.build("${registry}:${env.BUILD_ID}")
-        }
-
+        sh 'docker build -t bogdanandriienko/cicd-pipeline:0'
       }
     }
 
